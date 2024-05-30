@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" value="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./lustria.regular.ttf" type="font/ttf" as="font" crossorigin>
+    <link rel="preload" href=".video/SteinsGateOP.mp4" type="video/mp4" as="video">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>New Tab Page</title>
+  </head>
+  <body>
+    <video autoplay muted loop class="background-vid" type="video/mp4">
+      <source src="./video/SteinsGateOP.mp4" type="video/mp4">
+      <source src="./video/SteinsGateOP.webm" type="video/webm">
+    </video>
+    <div class="landing wrapper">
+      <div id="heading">
+        <img src="./images/Arkenfox.png" id="arkenfox-logo">
+        <h1 id="title">Arkenfox</h1>
+      </div>
+      <div class="searchbox">
+        <form class="search-form" method="get" action="https://www.duckduckgo.com/">
+          <input type="search" id="query" name="q" placeholder="Search DuckDuckGo..." aria-label="Search DuckDuckGo">
+          <button id="submit" type="submit">
+            <img src="./images/Magnifying Glass.png" id="search-icon">
+          </button>
+        </form>
+      </div>
+      <div class="links">
+        <a href="https://www.privacyguides.org/en/"><img src="./images/PrivacyGuides.png"></a>
+        <a href="https://codeberg.org/"><img src="./images/Codeberg.png"></a>
+        <a href="https://piped.kavin.rocks/trending"><img src="./images/Piped.png"></a>
+        <a href="https://www.reddit.com/r/Piracy/wiki/megathread/"><img src="./images/Piracy.png"></a>
+        <a href="https://annas-archive.org"><img src="./images/AnnasArchive.png"></a>
+      </div>
+    </div>
+  </body>
+</html>

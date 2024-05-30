@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Tahoma;
+  background-color: #e8f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+ul, .menu-bar {
+  display: flex;
+}
+
+.menu-bar {
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-title {
+  font-weight: normal;
+  margin-left: 2.5vw;
+}
+
+.menu-tab {
+  transition: 0.3s ease;
+}
+
+.menu-tab a {
+  display: block;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-tab:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  padding: 5vh 0 10vh 0;
+  margin-bottom: 0;
+}
+
+.opener {
+  max-width: 65vw;
+  margin: auto;
+}
+
+.opener h1 {
+  font-size: 70px;
+  margin: 0 0 15px 0;
+}
+
+.opener p {
+  font-size: 35px;
+  margin: 20px 0 20px 0;
+} 
+
+.resource {
+  font-size: 22px;
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  background-color: #8db3b3;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 4vh;
+  border: 2px solid black;
+}
+
+.left-align {
+  margin-left: 12vw;
+  text-align: left;
+}
+
+.right-align {
+  margin-left: 28vw;
+  text-align: right;
+}
+
+.left-align img {
+  margin-left: 3%;
+}
+
+.right-align img {
+  margin-right: 3%;
+}
+
+.resource img {
+  flex: 0 0 auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.description h1 {
+  font-size: 40px;
+  margin: 0 0 8px 0;
+  padding: 0px 20px 0px 20px;
+}
+
+.description p {
+  margin: 0px;
+  padding: 0px 20px 0px 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  height: 7vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery div:last-child {
+   margin-bottom: 0;
+}
+
+.gallery-link {
+  transition: 0.2s ease
+}
+
+.gallery-link:hover {
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+}
