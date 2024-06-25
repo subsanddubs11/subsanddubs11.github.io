@@ -2,50 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" value="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     <link rel="preload" href="./lustria.regular.ttf" type="font/ttf" as="font" crossorigin>
-    <link rel="preload" href=".video/Steinsgateop.mp4" type="video/mp4" as="video">
-    <link rel="preload" href=".video/Steinsgateop.webm" type="video/webm" as="video">
+    <link rel="preload" href="./video/SteinsGateOp_Full.mp4" type="video/mp4" as="video">
+    <link rel="preload" href="./video/SteinsGateOp_Full.webm" type="video/webm" as="video">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>New Tab</title>
   </head>
   <body>
     <video autoplay muted loop class="background-vid" type="video/mp4">
-      <source src="./video/Steinsgateop.mp4" type="video/mp4">
-      <source src="./video/Steinsgateop.webm" type="video/webm">
+      <source src="./video/SteinsGateOp_Full.mp4" type="video/mp4">
+      <source src="./video/SteinsGateOp_Full.webm" type="video/webm">
     </video>
-    <div class="landing wrapper">
-      <div id="heading">
-        <img src="./images/Arkenfox.png" id="arkenfox-logo">
-        <h1 id="title">Arkenfox</h1>
+    <div class='square-box'>
+      <div class="arkenfox">
+          <img src="./images/Arkenfox.png" alt="Arkenfox">
       </div>
-      <div class="search-box">
-        <form class="search-form" method="get" action="https://search.brave.com/search">
-          <input type="search" id="query" name="q" placeholder="Search Brave..." aria-label="Search DuckDuckGo">
+      <div class='square-content'><div><span>Arkenfox</span></div></div>
+    </div>
+    <div id="search-box">
+      <form id="search-form" method="get" action="https://search.brave.com/search">
+        <input type="search" id="query" name="q" placeholder="Search Brave..." aria-label="Search DuckDuckGo">
+        <div id="button-wrapper">
           <button id="submit" type="submit">
-            <img src="./images/Magnifying Glass.png" id="search-icon">
+            <div class="square">
+              <img src="./images/Magnifying Glass.png" id="search-icon">
+            </div>
           </button>
-        </form>
+        </div>
+      </form>
+    </div>
+    <div class="links">
+      <div class="links-img">
+        <a href="https://www.privacyguides.org/en/"><img src="./images/PrivacyGuides.png" alt="Privacy Guides"></a>
       </div>
-      <div class="links">
-        <div class="links-img">
-          <a href="https://www.privacyguides.org/en/"><img src="./images/PrivacyGuides.png"></a>
-        </div>
-        <div class="links-img">
-          <a href="https://codeberg.org/"><img src="./images/Codeberg.png"></a>
-        </div>
-        <div class="links-img">
-          <a href="https://piped.kavin.rocks/trending"><img src="./images/Piped.png"></a>
-        </div>
-        <div class="links-img">
-          <a href="https://www.reddit.com/r/Piracy/wiki/megathread/"><img src="./images/Piracy.png"></a>
-        </div>
-        <div class="links-img">
-          <a href="https://annas-archive.org"><img src="./images/AnnasArchive.png"></a>
-        </div>
+      <div class="links-img">
+        <a href="https://codeberg.org/"><img src="./images/Codeberg.png" alt="Codeberg"></a>
+      </div>
+      <div class="links-img">
+        <a href="https://piped.kavin.rocks/trending"><img src="./images/Piped.png" alt="Piped"></a>
+      </div>
+      <div class="links-img">
+        <a href="https://mail.proton.me"><img src="./images/Proton-Mail.jpg" alt="Proton Mail"></a>
+      </div>
+      <div class="links-img">
+        <a href="https://www.thestorygraph.com/"><img src="./images/TheStoryGraph.png" id="contain" alt="TheStoryGraph"></a>
       </div>
     </div>
   </body>
